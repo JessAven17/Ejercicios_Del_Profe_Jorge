@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+       var n = 0, contador = 1, n_primos=1, suma = 0;
+       n = parseInt(prompt("Dame un numero"));
+        while(contador < n){
+            if(contador%2 == 0){
+                suma = suma - (1/n_primos);
+            }else{
+                suma = suma + (1/n_primos);
+            }
+
+            n_primos = n_primos+2;
+
+            contador++;
+        }
+        console.log(suma*4);
+    </script>
+</body>
+</html>
